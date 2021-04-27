@@ -1,0 +1,103 @@
+.skills{
+    background-color: rgb(26, 26, 26);
+    padding : 0px 100px;
+    padding-bottom: 50px;
+
+    .skill-dev{
+        .skilss-box{
+            margin-top: 50px;
+
+            width: 23%;
+            text-align: center;
+            border: 2px solid rgb(65, 65, 65);
+            border-radius: 5px;
+            padding: 10px 0px;
+            font-family: 'ubuntu',sans-serif;
+            cursor: pointer;
+            h2{
+                padding: 5px 0px;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            h2::after{
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                transform: translate(-50%,0%);
+                width: 20%;
+                height: 100%;
+                border-bottom: 2px solid rgb(66, 66, 66);
+                
+            }
+            .elements{
+                h1{
+                    line-height: 40px;
+                    font-size: 15px;
+
+                }
+            }
+            .icon{
+                height: 80px;
+                width: 80px;
+                margin: auto;
+                position: relative;
+                border-radius: 50%;
+                border: 3px solid rgb(82, 82, 82);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i{
+                    color: rgb(255, 255, 255);
+                    font-size: 40px;
+                    
+                }
+
+            }
+
+            
+        }
+    }
+}
+
+.abcdefxxx{
+    height: 80px;
+}
+
+.choto-text{
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', cursive;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.choto-text::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 0px;
+    border-bottom: 2px solid rgb(255, 64, 64);
+    height: 100%;
+    transform: translate(-50%,0%);
+}
+.atsx_uu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width : 600px){
+    .atsx_uu{
+        flex-direction: column;
+        .skilss-box{
+            width: 100%!important;
+        }
+    }
+    .skills{
+        padding: 0px 40px!important;
+        padding-bottom: 100px!important;
+    }
+}

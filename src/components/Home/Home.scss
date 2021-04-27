@@ -1,0 +1,158 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .imgsec{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        img{
+            height: 100%;
+            width: 100%;
+            z-index: -100;
+        }
+    }
+    .atxtt{
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+
+        .name{
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'Proza Libre',sans-serif;
+        }
+        .textspinner{
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: 'ubuntu',sans-serif;
+            font-weight: 500;
+        }
+
+        .learnmore{
+            button{
+                background-color: transparent;
+                border-radius: 10px;
+                color: white;
+                height: 60px;
+                font-size: 30px;
+                font-family: 'ubuntu',sans-serif;
+                font-weight: bold;
+                padding: 0px 20px;
+                margin-top: 30px;
+                outline : none;
+                cursor: pointer;
+                transition: 0.2s all;
+                border: none;
+                animation-name: pqrts;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                border : 3px solid white;
+                position  : relative;
+                z-index: 1;
+
+                i{
+                    color : white;
+                }
+            }
+            button:hover{
+                background-color: white;
+                color: #262626;
+            }
+            button:hover i{
+                color: black!important;
+            }
+ 
+        }
+    }
+    .axttuy{
+        height: 40px;
+    }
+
+    .laskdjflskdfj{
+        position: absolute;
+    }
+
+
+}
+
+
+@keyframes pqrts{
+    0%{
+
+    }
+}
+
+.animate_fadedownxx{
+    animation: fadedown 1s;
+}
+
+@keyframes fadedown{
+    from{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    to{
+        transform: translate(0,30%);
+        opacity: 0;
+    }
+
+
+
+
+}
+
+.axttuyz{
+    transform: translate(0,30%);
+    opacity: 0;
+}
+
+
+.downanimat{
+    animation: buttonanimate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+
+@keyframes buttonanimate{
+    0%{
+        opacity: 0;
+        transform: translate(0px,-5px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px,5px);
+    }
+}
+@media only screen and (max-width : 1200px){
+    .home{
+        height: 50vh;
+    }
+}
+@media only screen and (max-width: 600px){
+    .typers{
+        font-size: 20px;
+    }
+    .typed-cursor{
+        font-size: 20px!important;
+    }
+    .name{
+        font-size: 30px!important;
+    }
+    .home{
+        height: 60vh;
+    }
+    
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>React App</title>
+    <style>
+      *{
+        padding : 0px;
+        margin : 0px;
+      }
+      body{
+        background-color : #222222;
+        color : white;
+      }
+      html{
+        scroll-behavior: smooth;
+
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    document.onscroll = async function(){
+        if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+            document.getElementById('NavBar').style.background = "black";
+        }
+        else document.getElementById('NavBar').style.background = "unset";
+
+        const sections = document.querySelectorAll('section');
+        let container = '';
+        await sections.forEach(section=>{
+          const h = section.offsetTop;
+          const y = pageYOffset;
+
+          if(y+50>=h){
+            container = section.getAttribute('id');
+          }
+
+
+
+
+
+        })
+        container+='X';
+        console.log(container)
+        const ddd = document.querySelectorAll('.menus ul a li');
+        ddd.forEach(st=>{
+          if(st.classList.contains('menu-item-active')){
+            st.classList.remove('menu-item-active');
+          }
+          if(st.classList.contains(container)){
+            st.classList.add('menu-item-active')
+          }
+        })
+
+
+    }
+
+    
+    
+  </script>
+</html>
